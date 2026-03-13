@@ -1,3 +1,5 @@
+import CleanTextDemo from "./components/clean-text-demo";
+
 export default function Home() {
   const faqSchema = {
     "@context": "https://schema.org",
@@ -54,6 +56,9 @@ export default function Home() {
             </a>
             <a href="/guides" className="hover:text-zinc-100">
               Guides
+            </a>
+            <a href="/about" className="hover:text-zinc-100">
+              About
             </a>
           </nav>
         </div>
@@ -141,44 +146,60 @@ export default function Home() {
           <h2 className="text-2xl font-semibold tracking-tight">
             How to clean ChatGPT text (short guide)
           </h2>
-          <div className="grid gap-6 md:grid-cols-[minmax(0,1.4fr)_minmax(0,1fr)] md:items-start">
-            <article className="space-y-4 text-sm leading-relaxed text-zinc-300 sm:text-base">
-              <p>
-                ChatGPT is great at generating ideas, but the text you copy from
-                the app is rarely ready to publish. On mobile, you&apos;ll often
-                see extra spaces, random line breaks, leftover prompts, or
-                watermarks mixed in with the answer. Cleaning that up before you
-                post or send it makes a big difference in how professional your
-                message feels.
-              </p>
-              <p>
-                A simple workflow is: generate your reply in ChatGPT → copy it →
-                paste into a text cleanup tool → remove extra spaces, blank
-                lines, or watermarks → then paste the polished version into
-                Twitter/X, email, notes, or your CMS. This takes a few seconds
-                on your phone but removes the &quot;AI copy-paste&quot; look
-                that people notice.
-              </p>
-              <p>
-                You can also use cleanup tools to normalize punctuation (for
-                example, fixing em dashes and smart quotes), strip signatures,
-                and quickly reformat long paragraphs into shorter, scannable
-                blocks. The result is content that still comes from ChatGPT, but
-                reads like you took the time to edit it yourself.
-              </p>
-            </article>
-            <div className="space-y-4 rounded-2xl border border-zinc-800 bg-zinc-900/60 p-4 text-sm text-zinc-300">
-              <h3 className="text-sm font-semibold text-zinc-100">
-                Quick cleanup checklist
-              </h3>
-              <ul className="list-disc space-y-1.5 pl-4">
-                <li>Remove double spaces and trailing spaces.</li>
-                <li>Delete leftover prompts or instructions in the answer.</li>
-                <li>Strip watermarks, signatures, or export labels.</li>
-                <li>Fix em dashes, quotes, and bullet characters.</li>
-                <li>Break long walls of text into short paragraphs.</li>
-              </ul>
+          <div className="space-y-6">
+            <div className="grid gap-6 md:grid-cols-[minmax(0,1.4fr)_minmax(0,1fr)] md:items-start">
+              <article className="space-y-4 text-sm leading-relaxed text-zinc-300 sm:text-base">
+                <p>
+                  ChatGPT is great at generating ideas, but the text you copy
+                  from the app is rarely ready to publish. On mobile, you&apos;ll
+                  often see extra spaces, random line breaks, leftover prompts,
+                  or watermarks mixed in with the answer. Cleaning that up
+                  before you post or send it makes a big difference in how
+                  professional your message feels.
+                </p>
+                <p>
+                  A simple workflow is: generate your reply in ChatGPT → copy
+                  it → paste into a text cleanup tool → remove extra spaces,
+                  blank lines, or watermarks → then paste the polished version
+                  into Twitter/X, email, notes, or your CMS. This takes a few
+                  seconds on your phone but removes the &quot;AI copy-paste&quot;
+                  look that people notice.
+                </p>
+                <p>
+                  You can also use cleanup tools to normalize punctuation (for
+                  example, fixing em dashes and smart quotes), strip
+                  signatures, and quickly reformat long paragraphs into
+                  shorter, scannable blocks. The result is content that still
+                  comes from ChatGPT, but reads like you took the time to edit
+                  it yourself.
+                </p>
+              </article>
+              <div className="space-y-4 rounded-2xl border border-zinc-800 bg-zinc-900/60 p-4 text-sm text-zinc-300">
+                <h3 className="text-sm font-semibold text-zinc-100">
+                  Quick cleanup checklist
+                </h3>
+                <ul className="list-disc space-y-1.5 pl-4">
+                  <li>Remove double spaces and trailing spaces.</li>
+                  <li>Delete leftover prompts or instructions in the answer.</li>
+                  <li>
+                    Strip visible and hidden watermarks, signatures, or export
+                    labels.
+                  </li>
+                  <li>Fix em dashes, quotes, and bullet characters.</li>
+                  <li>Break long walls of text into short paragraphs.</li>
+                </ul>
+                <p className="text-xs text-zinc-400">
+                  Hidden watermarks often show up as repeated phrases, source
+                  tags, or tiny bits of tracking text inside your copy. A good
+                  cleanup tool can scan for those patterns, show you how many
+                  words and hidden markers are in the text, and remove them
+                  before you share screenshots, transcripts, or repurposed AI
+                  content.
+                </p>
+              </div>
             </div>
+
+            <CleanTextDemo />
           </div>
         </section>
 
@@ -285,12 +306,44 @@ export default function Home() {
       </main>
 
       <footer className="border-t border-zinc-900/80 bg-zinc-950/80">
-        <div className="mx-auto flex max-w-5xl flex-col gap-3 px-6 py-6 text-xs text-zinc-500 sm:flex-row sm:items-center sm:justify-between">
-          <p>© {new Date().getFullYear()} ChatGPT4Mobile.com · Q-Bot.</p>
-          <p className="text-zinc-600">
-            Guides for getting cleaner, more publish-ready ChatGPT replies on
-            your phone.
-          </p>
+        <div className="mx-auto flex max-w-5xl flex-col gap-4 px-6 py-6 text-xs text-zinc-500 sm:flex-row sm:items-center sm:justify-between">
+          <div className="space-y-1">
+            <p>© {new Date().getFullYear()} ChatGPT4Mobile.com · Q-Bot.</p>
+            <p className="text-zinc-600">
+              Guides for getting cleaner, more publish-ready ChatGPT replies on
+              your phone.
+            </p>
+            <p className="space-x-3 text-zinc-600">
+              <a href="/about" className="hover:text-zinc-300">
+                About
+              </a>
+              <span>·</span>
+              <a href="/privacy" className="hover:text-zinc-300">
+                Privacy
+              </a>
+            </p>
+          </div>
+          <div className="flex items-center gap-3 text-zinc-600">
+            <span className="text-[11px] uppercase tracking-[0.18em] text-zinc-500">
+              Social
+            </span>
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-emerald-300"
+            >
+              X
+            </a>
+            <a
+              href="https://www.linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-emerald-300"
+            >
+              LinkedIn
+            </a>
+          </div>
         </div>
       </footer>
 
