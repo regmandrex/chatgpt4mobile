@@ -1,9 +1,7 @@
 import { NextResponse } from "next/server";
 
 const BASE_URL =
-  process.env.VERCEL_URL
-    ? `https://${process.env.VERCEL_URL}`
-    : process.env.NEXT_PUBLIC_SITE_URL ?? "https://chatgpt4mobile.vercel.app";
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://chatgpt4mobile.com";
 
 const feedItems = [
   {
