@@ -339,7 +339,7 @@ export default function Home() {
             <a
               href="https://twitter.com"
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noopener noreferrer nofollow"
               className="hover:text-emerald-300"
             >
               X
@@ -347,7 +347,7 @@ export default function Home() {
             <a
               href="https://www.linkedin.com"
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noopener noreferrer nofollow"
               className="hover:text-emerald-300"
             >
               LinkedIn

@@ -25,6 +25,34 @@ const feedItems = [
       "Why pasted ChatGPT replies look different from what you see in the app, and how to fix extra spaces, broken bullets, smart quotes, and hidden prompts.",
     pubDate: "2025-03-12T00:00:00.000Z",
   },
+  {
+    title: "How to clean ChatGPT text on Android",
+    link: `${BASE_URL}/guides/how-to-clean-chatgpt-text-on-android`,
+    description:
+      "Copy from the app, clean in the browser, then paste into Gmail, Keep, or social—no extra apps. Works with split screen and bookmarks.",
+    pubDate: "2025-03-12T00:00:00.000Z",
+  },
+  {
+    title: "ChatGPT watermark remover for mobile",
+    link: `${BASE_URL}/guides/chatgpt-watermark-remover-mobile`,
+    description:
+      "Why watermarks and labels appear when you copy, and how to remove them before sharing or publishing.",
+    pubDate: "2025-03-12T00:00:00.000Z",
+  },
+  {
+    title: "ChatGPT text cleaner on iPhone",
+    link: `${BASE_URL}/guides/chatgpt-text-cleaner-iphone`,
+    description:
+      "Clean spacing and formatting from ChatGPT replies on iPhone using Safari and a web-based cleanup tool.",
+    pubDate: "2025-03-12T00:00:00.000Z",
+  },
+  {
+    title: "Best ChatGPT cleanup tools for mobile",
+    link: `${BASE_URL}/best-chatgpt-cleanup-tools`,
+    description:
+      "What to look for in a cleanup tool—space removal, watermark stripping, in-browser processing—and how to use one on your phone.",
+    pubDate: "2025-03-12T00:00:00.000Z",
+  },
 ];
 
 function escapeXml(unsafe: string): string {
