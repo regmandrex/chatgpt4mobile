@@ -159,16 +159,16 @@ export default function Home() {
                 </p>
                 <p>
                   A simple workflow is: generate your reply in ChatGPT → copy
-                  it → paste into a text cleanup tool (for a step-by-step on{" "}
+                  it → paste into a text cleanup tool (to{" "}
                   <a
                     href="https://gptcleanuptools.com"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-emerald-300 underline underline-offset-2 hover:text-emerald-200"
                   >
-                    how to clean ChatGPT text
+                    clean chatgpt text
                   </a>
-                  , GPTcleanuptools.com walks you through it) → remove extra
+                  {" "}step-by-step, GPTcleanuptools.com walks you through it) → remove extra
                   spaces, blank lines, or watermarks → then paste the polished
                   version into Twitter/X, email, notes, or your CMS. This takes
                   a few seconds on your phone but removes the &quot;AI
