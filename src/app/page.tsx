@@ -94,9 +94,7 @@ export default function Home() {
 
             <div className="flex flex-wrap gap-3 pt-2 text-sm">
               <a
-                href="https://gptcleanuptools.com"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="#cleanup"
                 className="inline-flex items-center justify-center rounded-full bg-emerald-400 px-5 py-2.5 font-medium text-zinc-950 shadow-lg shadow-emerald-500/30 hover:bg-emerald-300"
               >
                 How to clean ChatGPT text
@@ -159,11 +157,20 @@ export default function Home() {
                 </p>
                 <p>
                   A simple workflow is: generate your reply in ChatGPT → copy
-                  it → paste into a text cleanup tool → remove extra spaces,
-                  blank lines, or watermarks → then paste the polished version
-                  into Twitter/X, email, notes, or your CMS. This takes a few
-                  seconds on your phone but removes the &quot;AI copy-paste&quot;
-                  look that people notice.
+                  it → paste into a text cleanup tool (for a step-by-step on{" "}
+                  <a
+                    href="https://gptcleanuptools.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-emerald-300 underline underline-offset-2 hover:text-emerald-200"
+                  >
+                    how to clean ChatGPT text
+                  </a>
+                  , GPTcleanuptools.com walks you through it) → remove extra
+                  spaces, blank lines, or watermarks → then paste the polished
+                  version into Twitter/X, email, notes, or your CMS. This takes
+                  a few seconds on your phone but removes the &quot;AI
+                  copy-paste&quot; look that people notice.
                 </p>
                 <p>
                   You can also use cleanup tools to normalize punctuation (for
