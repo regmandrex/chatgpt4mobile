@@ -1,3 +1,4 @@
+import Breadcrumbs from "./components/breadcrumbs";
 import CleanTextDemo from "./components/clean-text-demo";
 
 export default function Home() {
@@ -65,6 +66,7 @@ export default function Home() {
       </header>
 
       <main className="mx-auto flex max-w-5xl flex-col gap-20 px-6 py-12 md:py-20">
+        <Breadcrumbs items={[{ label: "Home" }]} />
         <section className="grid gap-10 md:grid-cols-[minmax(0,1.6fr)_minmax(0,1fr)] md:items-center">
           <div className="space-y-6">
             <h1 className="text-balance text-4xl font-semibold tracking-tight sm:text-5xl">

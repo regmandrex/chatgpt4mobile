@@ -1,7 +1,16 @@
+import Breadcrumbs from "../../components/breadcrumbs";
+
 export default function CleanChatGPTTextGuide() {
   return (
     <div className="min-h-screen bg-zinc-950 text-zinc-50">
       <main className="mx-auto flex max-w-3xl flex-col gap-8 px-6 py-16 md:py-20">
+        <Breadcrumbs
+          items={[
+            { label: "Home", href: "/" },
+            { label: "Guides", href: "/guides" },
+            { label: "How to clean ChatGPT text for publishing" },
+          ]}
+        />
         <header className="space-y-3">
           <p className="text-xs font-medium uppercase tracking-[0.2em] text-emerald-300">
             Guide
