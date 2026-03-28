@@ -19,12 +19,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
-      url: `${BASE_URL}/best-chatgpt-cleanup-tools`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
       url: `${BASE_URL}/how-to-clean-chatgpt-text-mobile-guide`,
       lastModified: new Date(),
       changeFrequency: "monthly",
