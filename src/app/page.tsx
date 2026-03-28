@@ -190,11 +190,7 @@ export default function Home() {
 
           <div className="prose-content max-w-none space-y-0">
             <p>
-              Every day, millions of people copy text from{" "}
-              <a href="https://openai.com" target="_blank" rel="noopener noreferrer" className="text-emerald-300 underline underline-offset-2 hover:text-emerald-200">
-                ChatGPT
-              </a>{" "}
-              on their phones and run into the same frustrating problem: the text looks wrong. Extra spaces appear where there
+              Every day, millions of people copy text from ChatGPT on their phones and run into the same frustrating problem: the text looks wrong. Extra spaces appear where there
               should be none, line breaks fragment sentences mid-thought, em dashes convert to question marks in email
               clients, and mysterious formatting symbols surface when you paste into WordPress, social media, or a CMS. If
               you have ever asked how to clean chatgpt text on mobile, this guide gives you the complete, up-to-date answer
@@ -341,11 +337,7 @@ export default function Home() {
               default phrasing with your own voice, or stripping domain-specific artifacts your industry encounters.
             </p>
             <p>
-              For those who rely on tools like{" "}
-              <a href="https://grammarly.com" target="_blank" rel="noopener noreferrer" className="text-emerald-300 underline underline-offset-2 hover:text-emerald-200">
-                Grammarly
-              </a>
-              , integrating ChatGPT text cleaning into your broader content pipeline is one of the highest-leverage habits
+              For those who rely on grammar and style checkers, integrating ChatGPT text cleaning into your broader content pipeline is one of the highest-leverage habits
               to build. The best approach is to make cleaning automatic and invisible: set up shortcuts or bookmarks so
               that opening the cleaner requires zero extra steps, and the cleaned text is ready to paste before you even
               think about it. At that point, cleaning ChatGPT text becomes less of a chore and more of a seamless step in
@@ -396,6 +388,22 @@ export default function Home() {
               prompting &mdash; they are equally good at processing, cleaning, and polishing AI output into something that
               genuinely represents their standards.
             </p>
+
+            <h3>Official ChatGPT &amp; mobile resources</h3>
+            <ul>
+              <li>
+                <a href="https://help.openai.com" target="_blank" rel="noopener noreferrer" className="text-emerald-300 underline underline-offset-2 hover:text-emerald-200">
+                  OpenAI Help Center
+                </a>{" "}
+                &ndash; learn the basics of ChatGPT features and account settings.
+              </li>
+              <li>
+                <a href="https://support.apple.com/guide/shortcuts/intro-to-shortcuts-apdf22b0444c/ios" target="_blank" rel="noopener noreferrer" className="text-emerald-300 underline underline-offset-2 hover:text-emerald-200">
+                  Apple Shortcuts User Guide
+                </a>{" "}
+                &ndash; build automations to clean text directly from your iPhone clipboard.
+              </li>
+            </ul>
           </div>
         </section>
 
