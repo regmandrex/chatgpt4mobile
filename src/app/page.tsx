@@ -172,21 +172,9 @@ export default function Home() {
 
         {/* Featured Article */}
         <section id="featured-article" className="space-y-8 border-t border-zinc-800 pt-12">
-          <div className="space-y-3">
-            <div className="flex flex-wrap items-center gap-3 text-xs text-zinc-400">
-              <span className="rounded-full bg-emerald-500/10 px-2.5 py-1 text-xs font-semibold text-emerald-300">
-                Featured Guide
-              </span>
-              <span>March 26, 2026</span>
-              <span>&middot;</span>
-              <span>Q-Bot Editorial Team</span>
-              <span>&middot;</span>
-              <span>~8 min read</span>
-            </div>
-            <h2 className="text-2xl font-semibold tracking-tight sm:text-3xl">
-              How to Clean ChatGPT Text on Mobile &mdash; The Complete 2026 Guide
-            </h2>
-          </div>
+          <h2 className="text-2xl font-semibold tracking-tight sm:text-3xl">
+            How to Clean ChatGPT Text on Mobile &mdash; The Complete 2026 Guide
+          </h2>
 
           <div className="prose-content max-w-none space-y-0">
             <p>
