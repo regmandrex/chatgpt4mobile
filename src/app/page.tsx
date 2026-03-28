@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Breadcrumbs from "./components/breadcrumbs";
+import CleanTextDemo from "./components/clean-text-demo";
 import { getLatestPosts } from "@/lib/posts";
 import type { BlogPost } from "@/lib/types";
 
@@ -172,9 +173,7 @@ export default function Home() {
               <span>~8 min read</span>
             </div>
             <h2 className="text-2xl font-semibold tracking-tight sm:text-3xl">
-              <a href="/how-to-clean-chatgpt-text-mobile-guide" className="hover:text-emerald-300 transition-colors">
-                How to Clean ChatGPT Text on Mobile &mdash; The Complete 2026 Guide
-              </a>
+              How to Clean ChatGPT Text on Mobile &mdash; The Complete 2026 Guide
             </h2>
           </div>
 
@@ -387,6 +386,17 @@ export default function Home() {
               genuinely represents their standards.
             </p>
           </div>
+        </section>
+
+        {/* Interactive Demo */}
+        <section className="space-y-4 border-t border-zinc-800 pt-10">
+          <h2 className="text-2xl font-semibold tracking-tight">
+            Try the Free ChatGPT Text Cleaner
+          </h2>
+          <p className="text-sm text-zinc-400">
+            Paste any ChatGPT response below to remove hidden characters, fix spacing, and strip formatting.
+          </p>
+          <CleanTextDemo />
         </section>
 
         {/* Latest Posts */}
