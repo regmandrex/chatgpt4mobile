@@ -5,11 +5,11 @@ import { getLatestPosts } from "@/lib/posts";
 import type { BlogPost } from "@/lib/types";
 
 export const metadata: Metadata = {
-  title: "Clean ChatGPT Text on Mobile — The Fastest Way to Fix AI Formatting",
+  title: "ChatGPT4Mobile – Clean ChatGPT Text on iPhone & Android",
   description:
     "Learn how to clean ChatGPT text on mobile in seconds. Remove formatting, hidden characters, and spacing issues. The complete 2026 guide for iPhone and Android users.",
   openGraph: {
-    title: "Clean ChatGPT Text on Mobile — The Fastest Way to Fix AI Formatting",
+    title: "ChatGPT4Mobile – Clean ChatGPT Text on iPhone & Android",
     description:
       "The definitive resource for cleaning ChatGPT text, using a chatgpt text cleaner, or removing chatgpt formatting on iPhone and Android.",
     url: "https://chatgpt4mobile.com",

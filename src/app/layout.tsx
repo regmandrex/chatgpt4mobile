@@ -16,9 +16,21 @@ const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://chatgpt4mobile.com
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
-  title: "ChatGPT4Mobile · Q-Bot – Clean ChatGPT text on your phone",
+  title: {
+    default: "ChatGPT4Mobile – Clean ChatGPT Text on Mobile",
+    template: "%s | ChatGPT4Mobile",
+  },
   description:
     "ChatGPT4Mobile (Q-Bot) helps you use ChatGPT on your phone and clean up replies with GPTcleanuptools.com – remove extra spaces, watermarks, and messy punctuation in seconds.",
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/favicon-32x32.png", type: "image/png", sizes: "32x32" },
+      { url: "/favicon-16x16.png", type: "image/png", sizes: "16x16" },
+      { url: "/favicon.svg", type: "image/svg+xml" },
+    ],
+    apple: "/apple-touch-icon.png",
+  },
   openGraph: {
     url: SITE_URL,
     siteName: "ChatGPT4Mobile",
