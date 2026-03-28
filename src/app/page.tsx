@@ -159,6 +159,17 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Interactive Demo */}
+        <section className="space-y-4 border-t border-zinc-800 pt-10">
+          <h2 className="text-2xl font-semibold tracking-tight">
+            Try the Free ChatGPT Text Cleaner
+          </h2>
+          <p className="text-sm text-zinc-400">
+            Paste any ChatGPT response below to remove hidden characters, fix spacing, and strip formatting.
+          </p>
+          <CleanTextDemo />
+        </section>
+
         {/* Featured Article */}
         <section id="featured-article" className="space-y-8 border-t border-zinc-800 pt-12">
           <div className="space-y-3">
@@ -386,17 +397,6 @@ export default function Home() {
               genuinely represents their standards.
             </p>
           </div>
-        </section>
-
-        {/* Interactive Demo */}
-        <section className="space-y-4 border-t border-zinc-800 pt-10">
-          <h2 className="text-2xl font-semibold tracking-tight">
-            Try the Free ChatGPT Text Cleaner
-          </h2>
-          <p className="text-sm text-zinc-400">
-            Paste any ChatGPT response below to remove hidden characters, fix spacing, and strip formatting.
-          </p>
-          <CleanTextDemo />
         </section>
 
         {/* Latest Posts */}
