@@ -24,6 +24,20 @@ export async function GET() {
     <language>en</language>
     <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>
     <atom:link href="${escapeXml(BASE_URL)}/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>${escapeXml("ChatGPT4Mobile – Clean ChatGPT Text on iPhone & Android")}</title>
+      <link>${escapeXml(BASE_URL)}</link>
+      <description>${escapeXml("The definitive resource for anyone who needs to clean chatgpt text, use a chatgpt text cleaner, or remove chatgpt formatting on iPhone and Android.")}</description>
+      <pubDate>${new Date("2026-03-27").toUTCString()}</pubDate>
+      <guid isPermaLink="true">${escapeXml(BASE_URL)}</guid>
+    </item>
+    <item>
+      <title>${escapeXml("How to Clean ChatGPT Text on Mobile — Step-by-Step 2026")}</title>
+      <link>${escapeXml(`${BASE_URL}/how-to-clean-chatgpt-text-mobile-guide`)}</link>
+      <description>${escapeXml("A practical walkthrough for removing markdown symbols, hidden characters, and spacing errors from ChatGPT output on iPhone and Android — before you publish anywhere.")}</description>
+      <pubDate>${new Date("2026-03-26").toUTCString()}</pubDate>
+      <guid isPermaLink="true">${escapeXml(`${BASE_URL}/how-to-clean-chatgpt-text-mobile-guide`)}</guid>
+    </item>
     ${allPosts
       .map(
         (post) => `

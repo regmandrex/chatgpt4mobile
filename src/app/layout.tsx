@@ -34,6 +34,9 @@ export const metadata: Metadata = {
     url: SITE_URL,
     siteName: "ChatGPT4Mobile",
   },
+  alternates: {
+    canonical: SITE_URL,
+  },
 };
 
 export default function RootLayout({
