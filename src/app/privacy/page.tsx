@@ -1,4 +1,26 @@
+import type { Metadata } from "next";
 import Breadcrumbs from "../components/breadcrumbs";
+
+export const metadata: Metadata = {
+  title: "Privacy Policy — ChatGPT4Mobile",
+  description:
+    "Read the ChatGPT4Mobile.com privacy policy. Learn what limited data we collect, how text demos are processed in-browser, and how we protect your privacy.",
+  openGraph: {
+    title: "Privacy Policy — ChatGPT4Mobile",
+    description:
+      "ChatGPT4Mobile.com privacy policy — what data we collect, how demos work in-browser, and how we handle your information.",
+    url: "https://chatgpt4mobile.com/privacy",
+  },
+  twitter: {
+    card: "summary",
+    title: "Privacy Policy — ChatGPT4Mobile",
+    description:
+      "ChatGPT4Mobile.com privacy policy — what data we collect and how we protect your privacy.",
+  },
+  alternates: {
+    canonical: "https://chatgpt4mobile.com/privacy",
+  },
+};
 
 export default function PrivacyPage() {
   return (

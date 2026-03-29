@@ -12,6 +12,12 @@ export const metadata: Metadata = {
     url: "https://chatgpt4mobile.com/how-to-clean-chatgpt-text-mobile-guide",
     type: "article",
   },
+  twitter: {
+    card: "summary",
+    title: "How to Clean ChatGPT Text on Mobile — Step-by-Step 2026",
+    description:
+      "Step-by-step guide to cleaning ChatGPT text on iPhone and Android before publishing.",
+  },
   alternates: {
     canonical: "https://chatgpt4mobile.com/how-to-clean-chatgpt-text-mobile-guide",
   },
@@ -24,6 +30,7 @@ const articleSchema = {
   description:
     "Step-by-step guide to cleaning ChatGPT text on iPhone and Android. Remove markdown symbols, invisible characters, and spacing issues before publishing.",
   datePublished: "2026-03-26",
+  dateModified: "2026-03-29",
   author: {
     "@type": "Organization",
     name: "Q-Bot Editorial Team",
@@ -32,6 +39,10 @@ const articleSchema = {
     "@type": "Organization",
     name: "ChatGPT4Mobile",
     url: "https://chatgpt4mobile.com",
+  },
+  mainEntityOfPage: {
+    "@type": "WebPage",
+    "@id": "https://chatgpt4mobile.com/how-to-clean-chatgpt-text-mobile-guide",
   },
   url: "https://chatgpt4mobile.com/how-to-clean-chatgpt-text-mobile-guide",
 };

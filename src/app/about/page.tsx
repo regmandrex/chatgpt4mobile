@@ -1,4 +1,26 @@
+import type { Metadata } from "next";
 import Breadcrumbs from "../components/breadcrumbs";
+
+export const metadata: Metadata = {
+  title: "About ChatGPT4Mobile — Who We Are & Our Mission",
+  description:
+    "Learn about ChatGPT4Mobile (Q-Bot) — an independent site helping you clean ChatGPT text on mobile. Guides, workflows, and tools for publish-ready AI output.",
+  openGraph: {
+    title: "About ChatGPT4Mobile — Who We Are & Our Mission",
+    description:
+      "An independent site helping you clean ChatGPT text on mobile. Guides, workflows, and tools for publish-ready AI output.",
+    url: "https://chatgpt4mobile.com/about",
+  },
+  twitter: {
+    card: "summary",
+    title: "About ChatGPT4Mobile",
+    description:
+      "Learn about ChatGPT4Mobile — guides, workflows, and tools for cleaning ChatGPT text on mobile.",
+  },
+  alternates: {
+    canonical: "https://chatgpt4mobile.com/about",
+  },
+};
 
 export default function AboutPage() {
   return (

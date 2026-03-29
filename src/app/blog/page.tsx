@@ -10,6 +10,14 @@ export const metadata: Metadata = {
     description: 'Expert guides on ChatGPT mobile usage, text cleaning, formatting fixes, and AI productivity tools.',
     url: 'https://chatgpt4mobile.com/blog',
   },
+  twitter: {
+    card: 'summary',
+    title: 'ChatGPT4Mobile Blog — ChatGPT Tips, Guides & Text Cleaning',
+    description: 'Browse 80+ expert guides on ChatGPT mobile usage, text cleaning, and formatting fixes.',
+  },
+  alternates: {
+    canonical: 'https://chatgpt4mobile.com/blog',
+  },
 };
 
 const CATEGORIES = [

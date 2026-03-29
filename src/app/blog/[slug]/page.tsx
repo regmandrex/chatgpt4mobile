@@ -30,6 +30,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       publishedTime: post.date,
       authors: [post.author],
     },
+    twitter: {
+      card: 'summary',
+      title: post.metaTitle,
+      description: post.metaDescription,
+    },
     alternates: {
       canonical: `${SITE_URL}/blog/${post.slug}`,
     },
@@ -73,6 +78,7 @@ export default async function BlogPostPage({ params }: Props) {
     headline: post.title,
     description: post.metaDescription,
     datePublished: post.date,
+    dateModified: post.date,
     author: {
       '@type': 'Organization',
       name: 'Q-Bot Editorial Team',
@@ -81,6 +87,10 @@ export default async function BlogPostPage({ params }: Props) {
       '@type': 'Organization',
       name: 'ChatGPT4Mobile',
       url: SITE_URL,
+    },
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': `${SITE_URL}/blog/${post.slug}`,
     },
     url: `${SITE_URL}/blog/${post.slug}`,
   };

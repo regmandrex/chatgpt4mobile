@@ -15,6 +15,12 @@ export const metadata: Metadata = {
     url: "https://chatgpt4mobile.com",
     siteName: "ChatGPT4Mobile",
   },
+  twitter: {
+    card: "summary",
+    title: "ChatGPT4Mobile – Clean ChatGPT Text on iPhone & Android",
+    description:
+      "Clean ChatGPT text on mobile in seconds. Remove formatting, hidden characters, and spacing issues on iPhone & Android.",
+  },
 };
 
 function PostCard({ post }: { post: BlogPost }) {
