@@ -6,6 +6,7 @@ import { cleanTextPosts } from './posts-clean-text';
 import { formattingPosts } from './posts-formatting';
 import { aiToolsPosts } from './posts-ai-tools';
 import { mobileProductivityPosts } from './posts-mobile-productivity';
+import { nigeriaHostingPosts } from './posts-nigeria-hosting';
 
 export const allPosts: BlogPost[] = [
   ...chatgptMobilePosts,
@@ -13,6 +14,7 @@ export const allPosts: BlogPost[] = [
   ...formattingPosts,
   ...aiToolsPosts,
   ...mobileProductivityPosts,
+  ...nigeriaHostingPosts,
 ].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
 export function getPostBySlug(slug: string): BlogPost | undefined {
