@@ -6,7 +6,7 @@ export const nigeriaHostingPosts: BlogPost[] = [
   {
     slug: "best-way-to-host-ai-website-nigeria",
     title: "Best Way to Host Your AI-Powered Website in Nigeria (And Why Your Host Matters More Than You Think)",
-    metaTitle: "Best Way to Host Your AI Website in Nigeria | ChatGPT4Mobile",
+    metaTitle: "Best Way to Host Your AI Website in Nigeria",
     metaDescription: "Choosing the right host for your AI-powered website in Nigeria affects your Google rankings, page speed, and uptime. Here's what to look for — and why local hosting often wins.",
     date: "2026-04-25",
     author: "Q-Bot Editorial Team",
