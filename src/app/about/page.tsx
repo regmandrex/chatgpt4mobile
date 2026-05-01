@@ -23,6 +23,53 @@ export const metadata: Metadata = {
 };
 
 export default function AboutPage() {
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "What is ChatGPT4Mobile?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "ChatGPT4Mobile.com is an independent site focused on helping people get cleaner, more publish-ready ChatGPT replies on their phones. We write guides, share workflows, and highlight tools that make mobile AI usage less messy and more professional.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Is ChatGPT4Mobile affiliated with OpenAI?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "No. ChatGPT4Mobile is an independent, community-driven resource. We are not affiliated with, endorsed by, or officially connected to OpenAI in any way. We create guides and tools to help users work with ChatGPT output more effectively on mobile devices.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Does ChatGPT4Mobile store or collect my text?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "No. Any text you paste into our on-page cleaning demos is processed entirely in your browser. Nothing is sent to or stored on our servers. Your text stays on your device at all times.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Why does ChatGPT text need cleaning on mobile?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "ChatGPT generates text using markdown formatting and embeds invisible Unicode characters. When you copy and paste this text on a mobile device, the result often includes extra spaces, broken line breaks, asterisks, and hidden characters that look messy in email, social media, or CMS editors. A dedicated cleaning step removes all these artifacts.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Is ChatGPT4Mobile free to use?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes. All guides, articles, and the on-page text cleaning demo on ChatGPT4Mobile.com are completely free to use. No sign-up or account is required.",
+        },
+      },
+    ],
+  };
+
   return (
     <div className="min-h-screen bg-zinc-950 text-zinc-50">
       <main className="mx-auto flex max-w-3xl flex-col gap-6 px-6 py-16 md:py-20">

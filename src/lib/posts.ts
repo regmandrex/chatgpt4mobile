@@ -6,6 +6,7 @@ import { cleanTextPosts } from './posts-clean-text';
 import { formattingPosts } from './posts-formatting';
 import { aiToolsPosts } from './posts-ai-tools';
 import { mobileProductivityPosts } from './posts-mobile-productivity';
+import { cleanupToolsPosts } from './posts-cleanup-tools';
 import { nigeriaHostingPosts } from './posts-nigeria-hosting';
 
 export const allPosts: BlogPost[] = [
@@ -14,6 +15,7 @@ export const allPosts: BlogPost[] = [
   ...formattingPosts,
   ...aiToolsPosts,
   ...mobileProductivityPosts,
+  ...cleanupToolsPosts,
   ...nigeriaHostingPosts,
 ].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
@@ -21,8 +23,10 @@ export function getPostBySlug(slug: string): BlogPost | undefined {
   return allPosts.find(p => p.slug === slug);
 }
 
+const HOME_EXCLUDED_SLUGS = ['best-way-to-host-ai-website-nigeria'];
+
 export function getLatestPosts(n: number): BlogPost[] {
-  return allPosts.slice(0, n);
+  return allPosts.filter(p => !HOME_EXCLUDED_SLUGS.includes(p.slug)).slice(0, n);
 }
 
 export function getPostsByCategory(category: string): BlogPost[] {

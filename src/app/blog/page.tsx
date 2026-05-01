@@ -46,13 +46,13 @@ function PostCard({ post }: { post: BlogPost }) {
         <span className="text-xs text-zinc-500">{formatDate(post.date)}</span>
       </div>
       <h2 className="text-base font-semibold text-zinc-100 leading-snug">
-        <a href={`/blog/${post.slug}`} className="hover:text-emerald-300 transition-colors">
+        <a href={`/${post.slug}`} className="hover:text-emerald-300 transition-colors">
           {post.title}
         </a>
       </h2>
       <p className="text-sm text-zinc-400 leading-relaxed line-clamp-3">{post.excerpt}</p>
       <a
-        href={`/blog/${post.slug}`}
+        href={`/${post.slug}`}
         className="mt-auto text-sm font-medium text-emerald-300 hover:text-emerald-200"
       >
         Read more →

@@ -27,7 +27,7 @@ function PostCard({ post }: { post: BlogPost }) {
   return (
     <article className="flex flex-col gap-2 rounded-2xl border border-zinc-800 bg-zinc-900/60 p-5 hover:border-zinc-700 transition-colors">
       <h3 className="text-sm font-semibold text-zinc-100 leading-snug">
-        <a href={`/blog/${post.slug}`} className="hover:text-emerald-300 transition-colors">
+        <a href={post.href ?? `/${post.slug}`} className="hover:text-emerald-300 transition-colors">
           {post.title}
         </a>
       </h3>
@@ -199,7 +199,7 @@ export default function Home() {
               you copy and paste it anywhere else. Most destination apps &mdash; email clients, note-taking apps, CMS editors,
               social platforms &mdash; do not interpret markdown automatically, so they display the raw syntax characters instead
               of the formatted output. For a deeper explanation, see our guide on{" "}
-              <a href="/blog/chatgpt-formatting-issues-explained" className="text-emerald-300 underline underline-offset-2 hover:text-emerald-200">
+              <a href="/chatgpt-formatting-issues-explained" className="text-emerald-300 underline underline-offset-2 hover:text-emerald-200">
                 ChatGPT formatting issues explained
               </a>.
             </p>
@@ -210,11 +210,11 @@ export default function Home() {
               environments: they break word counting, prevent proper text search, disrupt line-wrapping, and can trigger
               spam filters in email. Some versions of ChatGPT also embed watermark-style metadata in specific Unicode
               patterns, adding another layer of invisible content that only a dedicated scanner can detect. Learn more about{" "}
-              <a href="/blog/chatgpt-invisible-characters-explained" className="text-emerald-300 underline underline-offset-2 hover:text-emerald-200">
+              <a href="/chatgpt-invisible-characters-explained" className="text-emerald-300 underline underline-offset-2 hover:text-emerald-200">
                 ChatGPT invisible characters
               </a>{" "}
               and how to{" "}
-              <a href="/blog/remove-chatgpt-watermarks-from-text" className="text-emerald-300 underline underline-offset-2 hover:text-emerald-200">
+              <a href="/remove-chatgpt-watermarks-from-text" className="text-emerald-300 underline underline-offset-2 hover:text-emerald-200">
                 remove ChatGPT watermarks from text
               </a>.
             </p>
@@ -224,7 +224,7 @@ export default function Home() {
               from ChatGPT, your phone may include hidden formatting tags that travel with the text to its destination.
               Auto-correct features can also modify text during copy operations on certain keyboard configurations. The
               result is that mobile users often see more{" "}
-              <a href="/blog/how-to-fix-chatgpt-copy-paste-issues" className="text-emerald-300 underline underline-offset-2 hover:text-emerald-200">
+              <a href="/how-to-fix-chatgpt-copy-paste-issues" className="text-emerald-300 underline underline-offset-2 hover:text-emerald-200">
                 ChatGPT copy paste issues
               </a>{" "}
               than desktop users copying the same responses.
@@ -240,13 +240,9 @@ export default function Home() {
               to plain text, and report exactly what was changed so you can review the result.
             </p>
             <p>
-              If you need to{" "}
-              <a href="https://gptcleanuptools.com" target="_blank" rel="noopener noreferrer" className="text-emerald-300 underline underline-offset-2 hover:text-emerald-200">
-                clean chatgpt text
-              </a>{" "}
-              regularly &mdash; for blogging, email newsletters, social media posts, client reports, or any other publishing
+              If you need to clean chatgpt text regularly &mdash; for blogging, email newsletters, social media posts, client reports, or any other publishing
               workflow &mdash; using a dedicated cleaner is far more efficient than manually editing each response. Compare options in our{" "}
-              <a href="/blog/best-way-to-clean-chatgpt-responses" className="text-emerald-300 underline underline-offset-2 hover:text-emerald-200">
+              <a href="/best-way-to-clean-chatgpt-responses" className="text-emerald-300 underline underline-offset-2 hover:text-emerald-200">
                 best way to clean ChatGPT responses
               </a>{" "}
               roundup. A professional
@@ -258,7 +254,7 @@ export default function Home() {
             <h3>Step-by-Step: How to Clean ChatGPT Text on iPhone</h3>
             <p>
               Cleaning ChatGPT text on iPhone takes less than a minute when you have a reliable workflow. For more{" "}
-              <a href="/blog/chatgpt-on-iphone-tips-and-tricks" className="text-emerald-300 underline underline-offset-2 hover:text-emerald-200">
+              <a href="/chatgpt-on-iphone-tips-and-tricks" className="text-emerald-300 underline underline-offset-2 hover:text-emerald-200">
                 ChatGPT on iPhone tips and tricks
               </a>, see our dedicated guide. Follow these steps:
             </p>
@@ -278,7 +274,7 @@ export default function Home() {
               series of text replacement actions (removing asterisks, fixing spacing, stripping common ChatGPT artifacts),
               and returns cleaned text to the clipboard. Once set up, this makes cleaning a single-tap operation available
               from anywhere in iOS via the Share Sheet or a home screen icon. We cover this in detail in our{" "}
-              <a href="/blog/chatgpt-mobile-shortcuts" className="text-emerald-300 underline underline-offset-2 hover:text-emerald-200">
+              <a href="/chatgpt-mobile-shortcuts" className="text-emerald-300 underline underline-offset-2 hover:text-emerald-200">
                 ChatGPT mobile shortcuts
               </a>{" "}
               article.
@@ -288,7 +284,7 @@ export default function Home() {
             <p>
               Android users have additional flexibility because the platform is more open with clipboard and sharing
               systems. For the full walkthrough, see our{" "}
-              <a href="/blog/chatgpt-android-app-guide" className="text-emerald-300 underline underline-offset-2 hover:text-emerald-200">
+              <a href="/chatgpt-android-app-guide" className="text-emerald-300 underline underline-offset-2 hover:text-emerald-200">
                 ChatGPT Android app guide
               </a>. Here is the standard workflow:
             </p>
@@ -317,14 +313,14 @@ export default function Home() {
               <strong>Em dashes</strong>: ChatGPT uses em dashes (&mdash;) extensively in place of commas or parenthetical
               breaks. These can appear as question marks or boxes in email clients that do not support the Unicode
               character. Solution: replace with two hyphens, a comma, or remove entirely depending on context. See our{" "}
-              <a href="/blog/chatgpt-em-dash-removal-guide" className="text-emerald-300 underline underline-offset-2 hover:text-emerald-200">
+              <a href="/chatgpt-em-dash-removal-guide" className="text-emerald-300 underline underline-offset-2 hover:text-emerald-200">
                 ChatGPT em dash removal guide
               </a>.
             </p>
             <p>
               <strong>Bold markdown</strong>: Double asterisks (**text**) display as literal asterisks in plain-text
               environments. Solution: strip asterisks with Find and Replace or use a{" "}
-              <a href="/blog/chatgpt-bold-text-removal" className="text-emerald-300 underline underline-offset-2 hover:text-emerald-200">
+              <a href="/chatgpt-bold-text-removal" className="text-emerald-300 underline underline-offset-2 hover:text-emerald-200">
                 ChatGPT bold text removal
               </a>{" "}
               tool that does it automatically.
@@ -332,7 +328,7 @@ export default function Home() {
             <p>
               <strong>Bullet point characters</strong>: ChatGPT uses hyphens or asterisks for bullets, which do not carry
               proper list formatting to most apps. Solution:{" "}
-              <a href="/blog/remove-chatgpt-bullet-points" className="text-emerald-300 underline underline-offset-2 hover:text-emerald-200">
+              <a href="/remove-chatgpt-bullet-points" className="text-emerald-300 underline underline-offset-2 hover:text-emerald-200">
                 remove ChatGPT bullet points
               </a>{" "}
               by converting to actual list characters or removing the symbol and reformatting.
@@ -340,7 +336,7 @@ export default function Home() {
             <p>
               <strong>Excessive line breaks</strong>: ChatGPT adds double line breaks between paragraphs, creating large
               white-space gaps in many publishing environments. Solution:{" "}
-              <a href="/blog/remove-chatgpt-line-breaks" className="text-emerald-300 underline underline-offset-2 hover:text-emerald-200">
+              <a href="/remove-chatgpt-line-breaks" className="text-emerald-300 underline underline-offset-2 hover:text-emerald-200">
                 remove ChatGPT line breaks
               </a>{" "}
               by collapsing all multiple newlines to single paragraph breaks.
@@ -348,7 +344,7 @@ export default function Home() {
             <p>
               <strong>Heading markers</strong>: Hash symbols (#, ##, ###) appear literally in plain-text destinations.
               Solution: use a{" "}
-              <a href="/blog/fix-chatgpt-markdown-formatting" className="text-emerald-300 underline underline-offset-2 hover:text-emerald-200">
+              <a href="/fix-chatgpt-markdown-formatting" className="text-emerald-300 underline underline-offset-2 hover:text-emerald-200">
                 ChatGPT markdown formatting fixer
               </a>{" "}
               to strip them entirely or convert to styled headings if your destination app supports HTML.
@@ -360,11 +356,11 @@ export default function Home() {
               of a good cleaning tool addresses multiple types of spacing errors simultaneously: double spaces after
               periods, trailing spaces at line ends, multiple consecutive blank lines collapsed to proper paragraph breaks,
               non-breaking spaces that prevent word wrapping, and spaces inserted before punctuation marks. For a complete walkthrough, read our guide on how to{" "}
-              <a href="/blog/how-to-fix-chatgpt-spacing-issues" className="text-emerald-300 underline underline-offset-2 hover:text-emerald-200">
+              <a href="/how-to-fix-chatgpt-spacing-issues" className="text-emerald-300 underline underline-offset-2 hover:text-emerald-200">
                 fix ChatGPT spacing issues
               </a>{" "}
               and{" "}
-              <a href="/blog/fix-chatgpt-paragraph-spacing" className="text-emerald-300 underline underline-offset-2 hover:text-emerald-200">
+              <a href="/fix-chatgpt-paragraph-spacing" className="text-emerald-300 underline underline-offset-2 hover:text-emerald-200">
                 fix ChatGPT paragraph spacing
               </a>. On mobile, the
               auto-correct system on both iOS and Android can add unexpected spaces around special characters during paste
@@ -383,7 +379,7 @@ export default function Home() {
             <p>
               For those who rely on grammar and style checkers, integrating ChatGPT text cleaning into your broader content pipeline is one of the highest-leverage habits
               to build. Build a complete{" "}
-              <a href="/blog/chatgpt-text-cleaning-workflow" className="text-emerald-300 underline underline-offset-2 hover:text-emerald-200">
+              <a href="/chatgpt-text-cleaning-workflow" className="text-emerald-300 underline underline-offset-2 hover:text-emerald-200">
                 ChatGPT text cleaning workflow
               </a>{" "}
               that makes cleaning automatic and invisible: set up shortcuts or bookmarks so
@@ -401,21 +397,21 @@ export default function Home() {
               <strong>Email</strong>: Strip all markdown, use short paragraphs, remove bullet formatting (replace with
               dashes or numbered text), ensure single spacing throughout. Most email clients render plain text literally,
               and markdown asterisks or hash symbols will confuse recipients. See our full guide on{" "}
-              <a href="/blog/how-to-clean-chatgpt-text-for-email" className="text-emerald-300 underline underline-offset-2 hover:text-emerald-200">
+              <a href="/how-to-clean-chatgpt-text-for-email" className="text-emerald-300 underline underline-offset-2 hover:text-emerald-200">
                 how to clean ChatGPT text for email
               </a>.
             </p>
             <p>
               <strong>WordPress</strong>: Can accept basic HTML. Use a cleaner that converts markdown to HTML if you want
               headings and bold text preserved, or{" "}
-              <a href="/blog/clean-chatgpt-output-for-wordpress" className="text-emerald-300 underline underline-offset-2 hover:text-emerald-200">
+              <a href="/clean-chatgpt-output-for-wordpress" className="text-emerald-300 underline underline-offset-2 hover:text-emerald-200">
                 clean ChatGPT output for WordPress
               </a>{" "}
               to plain text and let WordPress&apos;s own block editor handle formatting.
             </p>
             <p>
               <strong>Google Docs</strong>: Handles formatted paste but imports unexpected styles. The best approach is to{" "}
-              <a href="/blog/clean-chatgpt-text-for-google-docs" className="text-emerald-300 underline underline-offset-2 hover:text-emerald-200">
+              <a href="/clean-chatgpt-text-for-google-docs" className="text-emerald-300 underline underline-offset-2 hover:text-emerald-200">
                 clean ChatGPT text for Google Docs
               </a>{" "}
               first, then paste as plain text (Ctrl+Shift+V on desktop, or paste into an intermediary on mobile) and apply your document
@@ -424,7 +420,7 @@ export default function Home() {
             <p>
               <strong>Social media (Twitter/X, LinkedIn, Instagram)</strong>: Plain text only. Strip all formatting,
               keep paragraphs short, and{" "}
-              <a href="/blog/clean-chatgpt-text-for-social-media" className="text-emerald-300 underline underline-offset-2 hover:text-emerald-200">
+              <a href="/clean-chatgpt-text-for-social-media" className="text-emerald-300 underline underline-offset-2 hover:text-emerald-200">
                 clean ChatGPT text for social media
               </a>{" "}
               by removing every special character that could display incorrectly across different devices and platforms.
@@ -438,7 +434,7 @@ export default function Home() {
             <p>
               The single most important change you can make is to make cleaning a reflex rather than an afterthought.
               Professionals who use ChatGPT heavily report that adopting a{" "}
-              <a href="/blog/clean-chatgpt-text-before-publishing" className="text-emerald-300 underline underline-offset-2 hover:text-emerald-200">
+              <a href="/clean-chatgpt-text-before-publishing" className="text-emerald-300 underline underline-offset-2 hover:text-emerald-200">
                 clean ChatGPT text before publishing
               </a>{" "}
               rule &mdash; never pasting ChatGPT text directly into a final destination without running it through a cleaner first &mdash; eliminates
@@ -448,7 +444,7 @@ export default function Home() {
               Start small: commit to cleaning one type of ChatGPT output consistently for a week. Then expand the habit
               to all ChatGPT text. Within two weeks, the workflow will feel automatic, and you will wonder how you ever
               published raw AI output without cleaning it first. For a structured approach, follow our{" "}
-              <a href="/blog/chatgpt-text-cleaning-best-practices" className="text-emerald-300 underline underline-offset-2 hover:text-emerald-200">
+              <a href="/chatgpt-text-cleaning-best-practices" className="text-emerald-300 underline underline-offset-2 hover:text-emerald-200">
                 ChatGPT text cleaning best practices
               </a>. The best ChatGPT users in 2026 are not just good at
               prompting &mdash; they are equally good at processing, cleaning, and polishing AI output into something that
@@ -457,18 +453,8 @@ export default function Home() {
 
             <h3>Official ChatGPT &amp; mobile resources</h3>
             <ul>
-              <li>
-                <a href="https://help.openai.com" target="_blank" rel="noopener noreferrer" className="text-emerald-300 underline underline-offset-2 hover:text-emerald-200">
-                  OpenAI Help Center
-                </a>{" "}
-                &ndash; learn the basics of ChatGPT features and account settings.
-              </li>
-              <li>
-                <a href="https://support.apple.com/guide/shortcuts/intro-to-shortcuts-apdf22b0444c/ios" target="_blank" rel="noopener noreferrer" className="text-emerald-300 underline underline-offset-2 hover:text-emerald-200">
-                  Apple Shortcuts User Guide
-                </a>{" "}
-                &ndash; build automations to clean text directly from your iPhone clipboard.
-              </li>
+              <li>OpenAI Help Center &ndash; learn the basics of ChatGPT features and account settings.</li>
+              <li>Apple Shortcuts User Guide &ndash; build automations to clean text directly from your iPhone clipboard.</li>
             </ul>
           </div>
         </section>

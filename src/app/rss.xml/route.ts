@@ -38,15 +38,22 @@ export async function GET() {
       <pubDate>${new Date("2026-03-26").toUTCString()}</pubDate>
       <guid isPermaLink="true">${escapeXml(`${BASE_URL}/how-to-clean-chatgpt-text-mobile-guide`)}</guid>
     </item>
+    <item>
+      <title>${escapeXml("Best ChatGPT Text Cleanup Tools in 2026")}</title>
+      <link>${escapeXml(`${BASE_URL}/best-chatgpt-text-cleanup-tools`)}</link>
+      <description>${escapeXml("Compare the best ChatGPT text cleanup tools in 2026, why AI text needs cleaning, and how to choose the right cleaner for publishing workflows.")}</description>
+      <pubDate>${new Date("2026-05-01").toUTCString()}</pubDate>
+      <guid isPermaLink="true">${escapeXml(`${BASE_URL}/best-chatgpt-text-cleanup-tools`)}</guid>
+    </item>
     ${allPosts
       .map(
         (post) => `
     <item>
       <title>${escapeXml(post.title)}</title>
-      <link>${escapeXml(`${BASE_URL}/blog/${post.slug}`)}</link>
+      <link>${escapeXml(`${BASE_URL}/${post.slug}`)}</link>
       <description>${escapeXml(post.excerpt)}</description>
       <pubDate>${new Date(post.date).toUTCString()}</pubDate>
-      <guid isPermaLink="true">${escapeXml(`${BASE_URL}/blog/${post.slug}`)}</guid>
+      <guid isPermaLink="true">${escapeXml(`${BASE_URL}/${post.slug}`)}</guid>
     </item>`
       )
       .join("")}

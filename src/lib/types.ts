@@ -8,4 +8,5 @@ export interface BlogPost {
   category: string;
   excerpt: string;
   content: string; // HTML content
+  href?: string; // override URL for standalone pages
 }

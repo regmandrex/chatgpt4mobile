@@ -25,7 +25,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     openGraph: {
       title: post.metaTitle,
       description: post.metaDescription,
-      url: `${SITE_URL}/blog/${post.slug}`,
+      url: `${SITE_URL}/${post.slug}`,
       type: 'article',
       publishedTime: post.date,
       authors: [post.author],
@@ -36,7 +36,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description: post.metaDescription,
     },
     alternates: {
-      canonical: `${SITE_URL}/blog/${post.slug}`,
+      canonical: `${SITE_URL}/${post.slug}`,
     },
   };
 }
@@ -90,9 +90,9 @@ export default async function BlogPostPage({ params }: Props) {
     },
     mainEntityOfPage: {
       '@type': 'WebPage',
-      '@id': `${SITE_URL}/blog/${post.slug}`,
+      '@id': `${SITE_URL}/${post.slug}`,
     },
-    url: `${SITE_URL}/blog/${post.slug}`,
+    url: `${SITE_URL}/${post.slug}`,
   };
 
   return (
