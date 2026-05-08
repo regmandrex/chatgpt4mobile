@@ -240,7 +240,11 @@ export default function Home() {
               to plain text, and report exactly what was changed so you can review the result.
             </p>
             <p>
-              If you need to clean chatgpt text regularly &mdash; for blogging, email newsletters, social media posts, client reports, or any other publishing
+              If you need to{" "}
+              <a href="https://gptcleanuptools.com" target="_blank" rel="noopener noreferrer" className="text-emerald-300 underline underline-offset-2 hover:text-emerald-200">
+                clean chatgpt text
+              </a>{" "}
+              regularly &mdash; for blogging, email newsletters, social media posts, client reports, or any other publishing
               workflow &mdash; using a dedicated cleaner is far more efficient than manually editing each response. Compare options in our{" "}
               <a href="/best-way-to-clean-chatgpt-responses" className="text-emerald-300 underline underline-offset-2 hover:text-emerald-200">
                 best way to clean ChatGPT responses
