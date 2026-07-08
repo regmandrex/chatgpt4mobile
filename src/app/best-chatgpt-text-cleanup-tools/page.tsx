@@ -123,7 +123,7 @@ export default function BestChatGPTTextCleanupToolsPage() {
               A dedicated cleaner is the best choice for most people because it is built around the exact problems AI output creates. Instead of treating the text like an ordinary spelling or grammar task, it looks for markdown leftovers, doubled spaces, excessive blank lines, hidden Unicode characters, odd punctuation, and copy-paste artifacts. The workflow is simple: paste the response, run the cleaner, review the cleaned result, and copy it into your final destination.
             </p>
             <p>
-              This category is especially useful on mobile. You do not need to install a heavy desktop editor or move the text through multiple apps. A browser-based cleaner works from Safari, Chrome, or any Android browser, which makes it convenient when you are cleaning text for a post, email, or document from your phone. For a focused option, use a tool built to <a href="https://gptcleanuptools.com" target="_blank" rel="noopener noreferrer" className="text-emerald-300 underline underline-offset-2 hover:text-emerald-200">clean chatgpt text</a> before the text reaches your publishing workflow.
+              This category is especially useful on mobile. You do not need to install a heavy desktop editor or move the text through multiple apps. A browser-based cleaner works from Safari, Chrome, or any Android browser, which makes it convenient when you are cleaning text for a post, email, or document from your phone. For a focused option, use a dedicated browser-based cleaner before the text reaches your publishing workflow.
             </p>
 
             <h3>2. Plain-Text Editors and Clipboard Tools</h3>
